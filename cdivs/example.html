@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Canvas Dividers Examples</title><link rel="shortcut icon" href="./favico.png" type="image/png"><link rel="stylesheet" href="./assets/css/style.css"><link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"></head><body><div class="section light-bg"><div class="container"><div class="row"><div class="col-md-12"><h2 class="text-center">Simple dividers</h2></div></div><div class="space clearfix"></div><div class="row"><div class="col-md-8"><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63</code><script type="code/text"><div class="section">
+...
+</div>
+<div data-cdivs="rectangles"></div>
+<div class="section">
+...
+</div>
+<div data-cdivs="rectangles"></div>
+<div class="section">
+...
+</div>
+
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		size: 40,
+		mobSize: 40,
+		anim: true,
+		zIndex: 10
+	});
+</scrip></script></div></div><div class="col-md-4"><div class="exm-main">Content</div><div data-cdivs="rectangles"></div><div class="tb tb-example exm-test" style="border-radius:0">Content</div><div data-cdivs="rectangles"></div><div class="exm-main2">Content</div></div></div></div><div class="section light-bg"><div class="container"><div class="row"><div class="col-md-12"><h2 class="text-center">Dividers with drawing one block</h2></div></div><div class="space clearfix"></div><div class="row"><div class="col-md-8"><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63</code><script type="code/text"><div class="section offset-bottom">
+...
+</div>
+<div data-cdivs="rectangles" data-cdivs-draw="next"></div>
+<div class="section">
+...
+</div>
+<div data-cdivs="rectangles" data-cdivs-draw="prev"></div>
+<div class="section offset-top">
+...
+</div>
+
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		size: 40,
+		mobSize: 40,
+		anim: true,
+		zIndex: 10
+	});
+</scrip></script></div></div><div class="col-md-4"><div class="exm-offset-bottom"><div class="exm-b3">Content</div><div class="exm-b2">Content</div></div><div class="clearfix"></div><div data-cdivs="rectangles" data-cdivs-draw="next"></div><div class="tb tb-example exm-test" style="border-radius:0">Content</div><div data-cdivs="rectangles" data-cdivs-draw="prev"></div><div class="exm-offset-top"><div class="exm-b">Content</div><div class="exm-b2">Content</div></div></div></div></div><script src="./assets/js/cdivs.min.js"></script><script>CDivs.init({size:40,mobSize:40,anim:!0,zIndex:10});for(var codes=document.querySelectorAll('script[type="code/text"]'),i=0;i<codes.length;i++){var text=codes[i].innerHTML.replace(/<scrip/g,"<script").replace(/scrip>/g,"script>").replace(/</g,"&lt;").replace(/\n/g,"<br>").replace(/\s([\w-]+)?=(".+?")(>)*/g,' <span class="attr">$1</span><span class="operator">=</span><span class="string">$2</span><span class="tag">$3</span>').replace(/\.\.\./g,'<span class="more">...</span>').replace(/(&lt;.+?[>\s])/g,'<span class="tag">$1</span>').replace(/(\d+?)/g,'<span class="num">$1</span>').replace(/('.+?')/g,'<span class="jsstring">$1</span>').replace(/(\w+?\.)(\w+)?\(/g,'$1<span class="method">$2</span>('),code=document.createElement("pre");code.setAttribute("data-code","true"),code.innerHTML=text,codes[i].parentNode.replaceChild(code,codes[i])}</script></div></div></body></html>

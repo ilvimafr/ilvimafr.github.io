@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Canvas Dividers Examples</title><link rel="shortcut icon" href="./favico.png" type="image/png"><link rel="stylesheet" href="./assets/css/style.css?ver=1.0.2"><link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"></head><body><div class="section header-title examples"><div class="container"><div class="row align-items-center"><div class="col-lg-12 text-center"><h1>Canvas Dividers Examples</h1><div class="divider"></div><p class="subtitle">Examples of using dividers with various cases.</p><a href="./index.html" class="btn">Back to main page</a></div></div></div></div><div data-cdivs="wavesBg" data-cdivs-anim="true" data-cdivs-size="70"></div><div class="section light-bg examples"><div class="container"><div class="row"><div class="col-md-3"><div class="ex-menu"><ul><li><a href="#simple-dividers">Simple dividers</a></li><li><a href="#draw">Single block dividers</a></li><li><a href="#anim">Animations</a></li><li><a href="#zIndex">z-index</a></li><li><a href="#overlay">Overlays</a></li><li><a href="#innerBg">Inner backgrounds</a></li><li><a href="#inside">Divider inside block</a></li></ul></div></div><div class="col-md-9"><h3 id="simple-dividers" style="margin-top:0">1. Simple dividers</h3><div class="divider"></div><p>To create a simple divider between two blocks, place blocks with the <code class="code-wrap attr-title">data-cdivs</code> attribute between the blocks between which you want to make a divider.<br>This will create a canvas between the blocks and draw the divider.</p><p>Blocks between which the divider is located must contain CSS background properties. Because the divider takes a background from these blocks to draw.</p><p class="warning">Note that the property <code class="code-wrap attr-title">background-attachment</code> not supported and will be ignored.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br><small>...</small><br>55<br>56<br>57<br>58</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles"></div>
+<div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init();
+</scrip></script></div><div class="tb-ex"><div class="tb simple tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40"></div><div class="tb simple tb-inner tb-bottom"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div><hr><h3 id="draw">2. Single block dividers</h3><div class="divider"></div><p>If there are elements inside the block that should be drawn on the divider but the divider draws only the background then use the <code class="code-wrap attr-title">data-cdivs-draw</code> attribute or the <code class="code-wrap attr-title">draw</code> option.</p><p>This allows you to draw the background of only one block. Instead of the background of another block, there will be transparency.</p><p>Use <code class="code-wrap attr-title">prev</code> value to draw only the previous block, or <code class="code-wrap attr-title">next</code> value to draw only the next block.</p><p>If there is only one block between the divider, then drawing one block will be automatic.</p><p class="warning">Note that the divider will shift towards the opposite block.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br><small>...</small><br>54<br>55<br>56<br>57<br>58<br>59</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles" data-cdivs-draw="prev"></div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		draw: 'prev'
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb simple tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40"></div></div><div class="space clearfix"></div><hr><h3 id="anim">3. Animations</h3><div class="divider"></div><p>By default, animation is disabled. Use the <code class="code-wrap attr-title">data-cdivs-anim</code> attribute to set animation for a specific divider or <code class="code-wrap attr-title">anim</code> option to set animation for all dividers.<br>Use <code class="code-wrap attr-title">true</code> value to enable animations or <code class="code-wrap attr-title">false</code> value to disable.</p><p>To set the animation speed, use the separate <code class="code-wrap attr-title">data-cdivs-anim-duration</code> attribute or the <code class="code-wrap attr-title">animDuration</code> option.<br>This number will be multiplied by the animation speed. Initially, the animation duration is set to <code class="code-wrap attr-title">2.0</code>.</p><p>For mobile devices, animation is included as the separate <code class="code-wrap attr-title">mobAnim</code> option.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br><small>...</small><br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles" data-cdivs-anim="true" data-cdivs-anim-duration="0.2"></div>
+<div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		anim: true,
+		animDuration: 0.2,
+		mobAnim: false
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb simple tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="true" data-cdivs-mob-size="40" data-cdivs-anim-duration="0.2"></div><div class="tb simple tb-inner tb-bottom"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div><hr><h3 id="zIndex">4. z-index</h3><div class="divider"></div><p>If you need to change the CSS property of the <code class="code-wrap attr-title">z-index</code> for the divider, you can use the <code class="code-wrap attr-title">data-cdivs-zindex</code> attribute or the <code class="code-wrap attr-title">zIndex</code> option. Initially is set to <code class="code-wrap attr-title">2</code>.</p><p>This will allow the divider to be on top of the blocks.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br><small>...</small><br>55<br>56<br>57<br>58<br>59<br>60</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles" data-cdivs-zindex="10"></div>
+<div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		zIndex: 10
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb simple tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40" data-cdivs-zindex="10"></div><div class="tb simple tb-inner tb-bottom"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div><hr><h3 id="overlay">5. Overlays</h3><div class="divider"></div><p>If overlay is used in addition to the background then indicate which element is overlaid. Use <code class="code-wrap attr-title">:after</code>, <code class="code-wrap attr-title">:before</code> or css selector.</p><p>This option parses color and transparency from the element that you specify and will additionally be drawn on the divider.</p><p>In this example, an overlay is used which is made using the <code class="code-wrap attr-title">:after</code> pseudo-class.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br><small>...</small><br>55<br>56<br>57<br>58<br>59<br>60</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles" data-cdivs-next-overlay=":after"></div>
+<div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		overlay: ':after'
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb bgimg bgoverlay tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40"></div><div class="tb bgimg bgoverlay tb-inner tb-bottom"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div><hr><h3 id="innerBg">6. Inner backgrounds</h3><div class="divider"></div><p>If the background is an element that is in the block then you can use the <code class="code-wrap attr-title">data-cdivs-prev-bg</code> and <code class="code-wrap attr-title">data-cdivs-next-bg</code> attributes or the <code class="code-wrap attr-title">innerBg</code> option.</p><p>This will allow you to specify the internal element that contains the background.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br>19<br><small>...</small><br>55<br>56<br>57<br>58<br>59<br>60</code><script type="code/text">...
+</div>
+<div data-cdivs="rectangles" data-cdivs-next-bg=".inner-bg"></div>
+<div>
+	<div class="inner-bg"></div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		innerBg: '.inner-bg'
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb bgimg tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40"></div><div class="tb bgimg tb-inner tb-bottom"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div><hr><h3 id="inside">7. Divider inside block</h3><div class="divider"></div><p>If for some reason you cannot insert a divider between blocks, then place it inside one of the blocks. Then indicate in which block you inserted it. Use the <code class="code-wrap attr-title">data-cdivs-inside</code> attribute or the <code class="code-wrap attr-title">inside</code> option.</p><p>Use <code class="code-wrap attr-title">prev</code> value to indicate that the divider is in the previous block, or <code class="code-wrap attr-title">next</code> value indicate that the divider is in the next block.</p><div class="code-wrap example"><code class="lines"><small>...</small><br>16<br>17<br>18<br><small>...</small><br>55<br>56<br>57<br>58<br>59<br>60<br>61</code><script type="code/text">...
+</div>
+<div>
+	<div data-cdivs="rectangles" data-cdivs-inside="next"></div>
+...
+<scrip src="cdivs.min.js"></scrip>
+<scrip>
+	CDivs.init({
+		inside: 'next'
+	});
+</scrip></script></div><div class="tb-ex"><div class="tb simple tb-inner tb-top"><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div><div class="tb simple tb-inner tb-bottom"><div data-cdivs="rectangles" data-cdivs-size="40" data-cdivs-anim="false" data-cdivs-mob-size="40" data-cdivs-inside="next"></div><h3 class="title">Canvas Dividers</h3><p>Adaptive and animated dividers of blocks.</p></div></div></div></div></div></div><div data-cdivs="rectangles" data-cdivs-size="15" data-cdivs-mob-size="15" data-cdivs-anim="true" data-cdivs-anim-duration=".3"></div><footer>Created by <a href="https://codecanyon.net/user/ilvimafr" target="_blank">ilvimafr</a></footer><script src="./assets/js/cdivs.min.js?ver=1.0.2"></script><script>CDivs.init({anim:!0,overlay:":after"});for(var codes=document.querySelectorAll('script[type="code/text"]'),i=0;i<codes.length;i++){var text=codes[i].innerHTML.replace(/<scrip/g,"<script").replace(/scrip>/g,"script>").replace(/</g,"&lt;").replace(/\n/g,"<br>").replace(/\s([\w-]+)?=(".+?")(>)*/g,' <span class="attr">$1</span><span class="operator">=</span><span class="string">$2</span><span class="tag">$3</span>').replace(/\.\.\./g,'<span class="more">...</span>').replace(/(&lt;.+?[>\s])/g,'<span class="tag">$1</span>').replace(/(\d+?)/g,'<span class="num">$1</span>').replace(/(true|false)/g,'<span class="num">$1</span>').replace(/('.+?')/g,'<span class="jsstring">$1</span>').replace(/(\w+?\.)(\w+)?\(/g,'$1<span class="method">$2</span>('),code=document.createElement("pre");code.setAttribute("data-code","true"),code.innerHTML=text,codes[i].parentNode.replaceChild(code,codes[i])}var exMenu=document.querySelector(".ex-menu"),exMenuUl=exMenu.querySelector("ul");window.addEventListener("scroll",function(e){var s=exMenu.getBoundingClientRect();exMenuUl.style.width=exMenu.offsetWidth+"px",exMenuUl.className=s.top<20?"fixed":""})</script></body></html>
