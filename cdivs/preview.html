@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CDivs.js - Adaptive and animated section dividers.">
+	<title>CDivs - Preview</title>
+	
+  <script type="module" crossorigin src="./assets/main-13a88e06.js"></script>
+  <link rel="stylesheet" href="./assets/main-80c8c8f8.css">
+  <link rel="stylesheet" href="./assets/style-9b24f9fb.css">
+</head>
+<body class="body-preview dark bg">
+
+<div class="site-wrap">
+
+	<div class="site-page">
+		<div class="site-section brand bg cdivs-bg cd-section-bottom">
+			<div class="container wide-container">
+				<div class="row justify-content-between">
+					<div class="col text-center">
+						<h1 data-anim="type: test">CDivs</h1>
+						<div class="divider bgwhite" data-divider="type:line" data-anim="type: test, delay: 100"></div>
+						<p class="lead" data-anim="type: test, delay: 200">
+							Adaptive and animated section dividers.<br>
+							Use <b>CDivs</b> to create canvas dividers between sections.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site-section" data-cdivs="t:ws,o:1,st:.7,dl:.4,dc:c,dO:.2,dF:cF,aSS:2,sh:5000,op:true"
+		     id="how-it-works">
+			<div class="container wide-container">
+				<div class="row text-trans text-center">
+					<div class="col">
+						<h2 data-anim="type: test">How it works</h2>
+						<div class="divider" data-divider="type:line"></div>
+						<p class="lead" data-anim="type: fade">
+							Main work of the script
+						</p>
+					</div>
+				</div>
+				<div class="space-10"></div>
+				<div class="row text-trans">
+					<div class="col-md-6 col-lg-3" data-anim="type: fade">
+						<div class="cdivs-process">
+							<div class="process">
+								<h3 class="process-title">
+									<span class="process-num text-trans">01.</span>
+									Element selection
+								</h3>
+								<p class="process-description">The element containing a background is selected between two
+									elements.</p>
+							</div>
+							<div class="space-20"></div>
+							<div class="cd-bg-wrap fiend bg-transparent">
+								<div class="cd-bottom cd-example">
+									<div class="cd-col">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light2">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3" data-anim="type: fade, delay: 100">
+						<div class="cdivs-process">
+							<div class="process">
+								<h3 class="process-title">
+									<span class="process-num text-trans">02.</span>
+									Element clipping
+								</h3>
+								<p class="process-description">The element is clipped using clip-path CSS property.</p>
+							</div>
+							<div class="space-20"></div>
+							<div class="cd-bg-wrap fiend bg-trans">
+								<div class="cd-svg-bg fill-trans">
+									<svg preserveAspectRatio="none" width="100%" height="100%">
+										<defs>
+											<pattern id="trans-pattern" width="20px" height="20px" patternUnits="userSpaceOnUse">
+												<rect x="0" y="0" width="10px" height="10px"/>
+												<rect x="10px" y="10px" width="10px" height="10px"/>
+											</pattern>
+										</defs>
+										<rect x="0" y="0" width="100%" height="100%" fill="url(#trans-pattern)"/>
+									</svg>
+								</div>
+								<div class="cd-bottom cd-example cd-clipped">
+									<div class="cd-col">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light2">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3" data-anim="type: fade, delay: 200">
+						<div class="cdivs-process">
+							<div class="process">
+								<h3 class="process-title">
+									<span class="process-num text-trans">03.</span>
+									Canvas dividers
+								</h3>
+								<p class="process-description">Canvases containing a divider shape are added.</p>
+							</div>
+							<div class="space-20"></div>
+							<div class="cd-bg-wrap fiend bg-trans">
+								<div class="cd-svg-bg fill-trans">
+									<svg preserveAspectRatio="none" width="100%" height="100%">
+										<rect x="0" y="0" width="100%" height="100%" fill="url(#trans-pattern)"/>
+									</svg>
+								</div>
+								<div class="cd-fake-white bg-trans"
+								     data-cdivs="t:a,s:40,o:.5,st:1,d:false,dl:0"></div>
+								<div class="cd-bottom cd-example cd-clipped">
+									<div class="cd-col">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light2">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+								</div>
+								<div class="cd-fake-white cd-fake-bottom bg-trans"></div>
+								<div data-cdivs="t:rt,i:!,s:40,st:.7,d:false,dl:0,dc:c,op:true,aT:a,aC:2,sl:.4,in:'.cd-col'"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3" data-anim="type: fade, delay: 300">
+						<div class="cdivs-process">
+							<div class="process">
+								<h3 class="process-title">
+									<span class="process-num text-trans">04.</span>
+									Canvas background
+								</h3>
+								<p class="process-description">The elements background is reproduced on divider canvases.</p>
+							</div>
+							<div class="space-20"></div>
+							<div class="cd-bg-wrap fiend bg-transparent">
+								<div class="cd-bottom cd-example"
+								     data-cdivs="t:a,s:40,o:.5,st:1,d:false,dl:0,in:'.cd-col'">
+									<div class="cd-col">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+									<div class="cd-col cd-overlay light2">
+										<div class="cd-space"></div>
+										<div class="cd-inner cd-heading"></div>
+										<div class="cd-inner cd-description"></div>
+									</div>
+								</div>
+								<div data-cdivs="t:rt,i:!,s:40,st:.7,d:false,dl:0,dc:c,op:true,aT:a,aC:2,sl:.4,in:'.cd-col'"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space-20"></div>
+			</div>
+		</div>
+
+
+		<div class="site-section brand bg cdivs-bg2 cd-section"
+		     data-cdivs="t:rt,d:!!,dl:0,i:!,o:.6,dc:ol,dO:.5,dW:1" id="features">
+			<div class="container wide-container">
+				<div class="row justify-content-center">
+					<div class="col text-center">
+						<h2 data-anim="type: test">Features</h2>
+						<div class="divider bgwhite" data-divider="type:line"></div>
+						<p class="lead" data-anim="type: test, delay: 200">The script main features</p>
+					</div>
+					<div class="col-lg-9" data-anim="type: fade">
+						<div class="row">
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-anim-8360898e.svg" alt="Animation" width="40" height="40">
+										</div>
+										<h4>Animation</h4>
+									</div>
+									<p>Each type comes with a light animation that can be customized using options.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-dpi-26a1c597.svg" alt="dpi" width="40" height="40">
+										</div>
+										<h4>High DPI</h4>
+									</div>
+									<p>Dividers automatically adjust to device pixel ratio.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-adaptive-66250b3b.svg" alt="Adaptive" width="40" height="40">
+										</div>
+										<h4>Adaptive</h4>
+									</div>
+									<p>Dividers sizes depend on screen size.<br>You can specify sizes and screen breakpoints by
+										options.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-bg-f1db766f.svg" alt="Background" width="40" height="40">
+										</div>
+										<h4>Background</h4>
+									</div>
+									<p>Dividers reproduce the element background.<br> Background color and position is
+										automatically updated.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-types-5a335242.svg" alt="Types" width="40" height="40">
+										</div>
+										<h4>Types</h4>
+									</div>
+									<p>The script contains 20 types that can be customize using options.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-decor-22963139.svg" alt="Decorations" width="40" height="40">
+										</div>
+										<h4>Decorations</h4>
+									</div>
+									<p>The script contains 10 decorations, which represents cutting shapes from a divider.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-p10">
+								<div class="feature">
+									<div class="iconbox">
+										<div class="iconbox-icon">
+											<img src="./assets/icon-internal-faf1dd00.svg" alt="Internal Elements" width="40"
+											     height="40">
+										</div>
+										<h4>Internal Elements</h4>
+									</div>
+									<p>
+										Dividers can contain CSS backgrounds of internal elements.
+										Internal elements must be specified in the inners option.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="remove-space-40"></div>
+			</div>
+		</div>
+
+		<div class="site-section light bg bg-trans cd-section" data-cdivs="t:pt1,sh:5000,o:1,aSS:2,aT:!!,dc:do,:1,u:!" id="types">
+			<div class="container wide-container">
+				<div class="row">
+					<div class="col-md-12 text-center text-trans">
+						<h2 data-anim="type: test">Types</h2>
+						<div class="divider" data-divider="type: line"></div>
+						<p class="lead" data-anim="type: test, delay: 200">20 divider types that can be customized with options</p>
+					</div>
+				</div>
+				<div class="space-40"></div>
+				<div class="row" data-anim="type: fade">
+					<div class="col">
+						<div class="cd-preview">
+							 <div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:s,s:50">
+								  <div class="cd-col cd-preview-col"></div>
+							 </div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:t,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:ts,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:rt,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:rts,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:hs,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:sl,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:bs,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:w,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:a,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:ri,s:50,dl:0,d:0,st:1">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:ds,s:50,dl:0,d:0,st:1">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:cl,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:ci,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:rs,s:50,dl:1.5">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:db,s:50,aT:!!">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:pt1,s:50,aT:!!">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:pt2,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dc:!!,dur:0,dl:0,t:pt3,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site-section" data-cdivs="t:pt2,sh:5000,o:1,aSS:2,dc:!!,dO:1" id="decor-types">
+			<div class="container wide-container">
+				<div class="row">
+					<div class="col-md-12 text-center text-trans">
+						<h2 data-anim="type: test">Decorations</h2>
+						<div class="divider" data-divider="type: line"></div>
+						<p class="lead" data-anim="type: test, delay: 200">10 decoration types that can be customized with options</p>
+					</div>
+				</div>
+				<div class="space-40"></div>
+				<div class="row" data-anim="type: fade">
+					<div class="col">
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:l,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:ol,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:iol,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:c,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:t,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:sq,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:ci,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:do,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:hx,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+						<div class="cd-preview">
+							<div class="cd-bottom cd-bottom-preview" data-cdivs="dO:1,dur:0,dl:0,dc:as,t:ws,s:50">
+								<div class="cd-col cd-preview-col"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<script src="./assets/cdivs.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&amp;display=swap" rel="stylesheet">
+
+
+</body>
+</html>

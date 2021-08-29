@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Examples</title>
+
+	<style>
+		.section {
+				background: #c22;
+				width: 300px;
+				height: 200px;
+		}
+		.section-yellow {
+				background: #fc2;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<h1>One block divider</h1>
+<!--
+	To set a simple divider:
+	Set an attribute data-cdivs to the block that has a CSS background
+	and specify the divider type in it:
+-->
+
+<div class="section" data-cdivs="type: skew, decor: lines"></div>
+
+
+
+<h1>Two block divider</h1>
+<!--
+	If the second block has its own background,
+	then you need to underlay it under the divider,
+	this is done with the underlay option.
+	Add a new option, separated by commas:
+-->
+<div class="section section-yellow"></div>
+<div class="section" data-cdivs="type: skew, decor: lines, underlay: true"></div>
+
+
+
+<h1>Animation off</h1>
+<!--
+	To turn off the animation, simply set the dur option to 0
+-->
+<div class="section section-yellow"></div>
+<div class="section" data-cdivs="type: skew, decor: lines, underlay: true, dur: 0"></div>
+
+
+
+<h1>Without decorations<h1>
+<!--
+	If you don't need decorations, lines that are cut from the divider,
+	you can simply turn them off by setting the decor option to false
+-->
+<div class="section section-yellow"></div>
+<div class="section" data-cdivs="type: skew, decor: false, underlay: true, dur: 0"></div>
+
+
+
+<h1>Different size of the divider</h1>
+<!--
+	To resize the divider you must set the size option to the desired size in pixels.
+	Four values are specified for different screen sizes.
+	For example, let's set the size with the value [20, 30, 35, 40]
+	so the divider height will be:
+	20px for screen widths < 768px
+	30px for screen widths ≥ 768px and < 992px
+	35px for screen widths ≥ 992px and < 1200px
+	40px for screen widths ≥ 1200px.
+-->
+<div class="section section-yellow"></div>
+<div class="section" data-cdivs="type: skew, decor: lines, underlay: true, dur: 0, size: [20, 30, 35, 40]"></div>
+
+
+<!-- Connecting the script at the end with the path to the script where it is located -->
+<script src="./assets/cdivs.min.js"></script>
+
+
+
+</body>
+</html>

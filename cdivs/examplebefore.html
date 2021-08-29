@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CDivs.js - Adaptive and animated section dividers.">
+	<title>CDivs - Adaptive and Animated Section Dividers</title>
+	
+	<link rel="shortcut icon" href="./assets/favicon-12f8033d.jpg" type="image/jpeg">
+	<style type="text/css">
+		.block {
+			position: relative;
+		}
+		.block::before {
+			content: '';
+			background: linear-gradient(#000 0%, #000 100%) no-repeat left center;
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left:  0;
+			top: 0;
+		}
+	</style>
+  <script type="module" crossorigin src="./assets/main-13a88e06.js"></script>
+  <link rel="stylesheet" href="./assets/main-80c8c8f8.css">
+  <link rel="stylesheet" href="./assets/style-9b24f9fb.css">
+</head>
+<body class="dark bg">
+
+	<div class="site-wrap">
+
+	<div class="site-header fixed notrans">
+		<div class="container wide-container">
+		</div>
+	</div>
+	<div class="site-header site-header-fake fixed notrans">
+		<div class="container wide-container">
+			<div class="site-header-wrap">
+				<div class="site-nav site-header-item fmend visible-md">
+					<a class="nav-item">
+						<span class="nav-hamburger"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-page">
+
+
+		<div class="site-section light bg bg-trans cd-section">
+			<div class="container wide-container">
+				<div class="row frrow">
+					<div class="col-md-6 col-space-left text-trans">
+						<div data-cdivs="type: arc, inners: '::before'" style="width: 100%; height: 200px; background: pink" class="block"></div>
+					</div>
+					<div class="col-md-6" data-anim="type: fade">
+						<div class="tab-content tab-content-active">
+							<pre class="code code-trans notranslate" data-code>
+								<span class="code-line code-line-empty">...</span>
+								<span class="code-line">.block::before {</span>
+								<span class="code-line">content: '';</span>
+								<span class="code-line">background: linear-gradient(#000 0%, #000 100%) no-repeat left center;</span>
+								<span class="code-line">width: 150px;</span>
+								<span class="code-line">height: 150px;</span>
+								<span class="code-line">position: absolute;</span>
+								<span class="code-line">left:  0;</span>
+								<span class="code-line">top: 0;</span>
+								<span class="code-line">}</span>
+								<span class="code-line code-line-empty">...</span>
+								<span class="code-line">
+									[t]&lt;div [a]class[/][e]=[/][s]"block"[/] [a]data-cdivs[/][e]=[/][s]"type: arc, inners: '::before'"[/]&gt;[/]
+								</span>
+								<span class="code-line code-line-empty">...</span>
+								<span class="code-line code-line-reset">
+									[t]&lt;script [a]src[/][e]=[/][s]"cdivs.min.js"[/]&gt;&lt;/script&gt;[/]
+								</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="site-mob-header"></div>
+
+	<div class="popup" data-popup-close>
+		<div class="popup-close" data-popup-close></div>
+		<div class="container wide-container fcol fcenter h100 perspective500" data-popup-close>
+			<div class="popup-container">
+				<div class="row popup-content">
+					<div class="col-md-12 pb0">
+						<h4 class="notranslate"></h4>
+						<table class="val-info">
+							<tr>
+								<td>Type:</td>
+								<td class="val-info-val popup-type"></td>
+							</tr>
+							<tr>
+								<td>Default:</td>
+								<td class="val-info-val popup-default-value"></td>
+							</tr>
+						</table>
+						<div class="popup-description"></div>
+						<div class="space"></div>
+						<div class="popup-example"></div>
+					</div>
+					<div class="col-md-6">
+						<div data-code="type: attribute" class="popup-code-attr">
+							<h5 class="code-title">Attribute options</h5>
+							<pre class="code notranslate border"></pre>
+						</div>
+						<div class="space-10"></div>
+						<div data-code="type: javascript" class="popup-code-js">
+							<h5 class="code-title">JavaScript options</h5>
+							<pre class="code notranslate border"></pre>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="popup-cdivs-wrapper">
+							 <div class="cd cd-main">
+								  <div class="space-150"></div>
+							 </div>
+							 <div class="cd-bottom cd-main cd-shift popup-cdivs">
+								  <div class="space-175"></div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+	<script src="assets/es/cdivs-raw.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&amp;display=swap" rel="stylesheet">
+
+
+</body>
+</html>
