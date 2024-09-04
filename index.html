@@ -13,9 +13,12 @@
     </style>
   </head>
   <body>
-    💀
+    <div id="content"></div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&display=swap" rel="stylesheet preload" as="style">
+    <script>
+      document.querySelector('#content').innerHTML = `window.Telegram: ${window.Telegram}, <br>window: ${Object.keys(window).join('<br>')}`
+    </script>
   </body>
 </html>
